@@ -2,6 +2,7 @@ services:
   - type: web
     name: landcraft
     env: python
+    pythonVersion: 3.12.4
     buildCommand: |
       apt-get update && apt-get install -y python3-setuptools python3-wheel
       pip install --upgrade pip setuptools wheel
